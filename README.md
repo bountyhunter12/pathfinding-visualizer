@@ -2,6 +2,10 @@
 
 React-based pathfinding visualizer that runs Dijkstra's algorithm on real-world maps using OpenStreetMap.
 
+## Pathfinding Visualizer Demo
+
+![Dijkstra Visualization](images/Screenshot 2026-02-05 032304.png)
+
 
 ## 🚀 Quick Start
 
