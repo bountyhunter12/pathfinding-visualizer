@@ -4,8 +4,9 @@ React-based pathfinding visualizer that runs Dijkstra's algorithm on real-world 
 
 ## Pathfinding Visualizer Demo
 
-![pathfinding-visualizer](images/Screenshot 2026-02-05 032304.png)
 
+
+<img width="1871" height="797" alt="Screenshot 2026-02-05 032304" src="https://github.com/user-attachments/assets/93efd653-d677-490c-9b0b-a5ac0cbcd346" />
 
 ## 🚀 Quick Start
 
