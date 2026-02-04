@@ -1,24 +1,7 @@
-# 🗺️ Map Pathfinding Visualizer - FIXED VERSION
+# 🗺️ Map Pathfinding Visualizer 
 
-**FULLY WORKING** React-based pathfinding visualizer that runs Dijkstra's algorithm on real-world maps using OpenStreetMap.
+React-based pathfinding visualizer that runs Dijkstra's algorithm on real-world maps using OpenStreetMap.
 
-## ✅ What's Fixed
-
-This version fixes ALL the issues from the previous version:
-
-1. ✅ **Points are NOW VISIBLE** - Grid of colored dots appears on map
-2. ✅ **Clicking WORKS** - You can click to set start/finish/walls
-3. ✅ **Algorithm RUNS** - Dijkstra's algorithm properly executes
-4. ✅ **Animation WORKS** - Blue dots spread, yellow path appears
-5. ✅ **Proper Grid System** - 25x25 grid with actual pathfinding logic
-
-## 🎯 Key Improvements
-
-- **Proper Grid Structure**: Uses a 2D array with row/col indexing
-- **Actual Dijkstra Implementation**: Real shortest-path algorithm
-- **Map Click Handler**: Uses react-leaflet's `useMapEvents` hook
-- **Closest Node Detection**: Finds nearest grid point to your click
-- **Visual Feedback**: Clear colors and sizes for different node types
 
 ## 🚀 Quick Start
 
@@ -110,62 +93,9 @@ const DEFAULT_CENTER = [40.7128, -74.0060]; // NYC
 const DEFAULT_ZOOM = 14;
 ```
 
-Try these locations:
-- **San Francisco**: `[37.7749, -122.4194]`
-- **London**: `[51.5074, -0.1278]`  
-- **Tokyo**: `[35.6762, 139.6503]`
-- **Paris**: `[48.8566, 2.3522]`
 
-### Change Grid Size
-```javascript
-const GRID_SIZE = 25; // Make it 30 or 20 or 15
-```
-- Larger = More detailed but slower
-- Smaller = Faster but less precise
 
-### Change Animation Speed
-```javascript
-const animationSpeed = 30; // milliseconds
-// Lower = Faster, Higher = Slower
-```
 
-### Adjust Grid Spacing
-In `dijkstra.js`:
-```javascript
-const latSpacing = 0.002; // ~220 meters
-const lngSpacing = 0.003; // ~220 meters
-```
-
-## 🐛 Troubleshooting
-
-### Problem: No dots visible on map
-**Solution**: 
-- Zoom in more (try zoom level 15-16)
-- Check browser console for errors
-- Ensure `npm install` completed successfully
-
-### Problem: Can't click on points
-**Solution**:
-- Make sure a mode button is selected (should be highlighted)
-- Try zooming in closer
-- Check that you're clicking near a grid point (gray dot)
-
-### Problem: Algorithm doesn't run
-**Solution**:
-- Ensure start (green) and finish (red) are set
-- Make sure they're not the same point
-- Check there's a path (not completely blocked by walls)
-
-### Problem: Path goes through walls
-**Solution**:
-- This shouldn't happen with the fixed code
-- If it does, try "Clear All" and recreate
-
-### Problem: Map loads but no grid
-**Solution**:
-- Check internet connection (needs to load map tiles)
-- Open browser console (F12) and check for errors
-- Try refreshing the page
 
 ## 📦 Project Structure
 
@@ -196,27 +126,6 @@ src/
 - ✅ Easy to visualize
 - ✅ Foundation for A*, etc.
 
-## 🎯 Next Steps / Ideas
-
-Want to extend this project? Try:
-- [ ] Add A* algorithm (heuristic-based)
-- [ ] Implement BFS/DFS
-- [ ] Add diagonal movement
-- [ ] Make grid size adjustable via UI
-- [ ] Add animation speed slider
-- [ ] Show distance/stats in real-time
-- [ ] Save/load maze patterns
-- [ ] Add touch support for mobile
-
-## 🆓 Why OpenStreetMap?
-
-| Feature | OpenStreetMap | Google Maps |
-|---------|---------------|-------------|
-| Cost | FREE ✅ | $200/mo free credit |
-| API Key | NOT needed ✅ | Required |
-| Billing | NO ✅ | Credit card required |
-| Limits | None ✅ | Usage caps |
-| Open Source | Yes ✅ | No |
 
 ## 🙏 Credits
 
@@ -225,18 +134,4 @@ Want to extend this project? Try:
 - React-Leaflet maintainers
 - Dijkstra (for the algorithm!)
 
-## 📝 License
 
-Open source for educational purposes.
-
----
-
-## 💡 Pro Tips
-
-1. **Start simple**: Use default start/finish first
-2. **Create patterns**: Make maze-like wall patterns
-3. **Zoom in**: Closer zoom = easier to click points
-4. **Watch carefully**: Algorithm spreads in all directions
-5. **Experiment**: Try blocking paths to see rerouting
-
-**Enjoy visualizing pathfinding algorithms! 🎉**
